@@ -1,0 +1,8 @@
+[Unit]
+Description=Run UDM boot scripts at startup
+After=unifi.service unifi-core.service
+[Timer]
+OnStartupSec=300
+RandomizedDelaySec=300
+[Install]
+WantedBy=timers.target

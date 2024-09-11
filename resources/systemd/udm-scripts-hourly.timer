@@ -1,0 +1,9 @@
+[Unit]
+Description=Run UDM hourly scripts
+After=unifi.service unifi-core.service
+[Timer]
+OnCalendar=hourly
+Persistent=false
+RandomizedDelaySec=300
+[Install]
+WantedBy=timers.target

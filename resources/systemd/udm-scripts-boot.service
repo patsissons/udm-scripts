@@ -1,0 +1,9 @@
+[Unit]
+Description=UDM boot scripts
+[Service]
+Environment=HOME=/root
+Type=oneshot
+RemainAfterExit=false
+TimeoutSec=15m
+WorkingDirectory=/data/udm-scripts
+ExecStart=/data/udm-scripts/run.sh boot
